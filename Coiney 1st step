@@ -1,4 +1,9 @@
 UNIX:
 1.Describe how to spawn a new process.
+Ans:1. Kernel has to take an existing process and then copy all of it into another part of memory. 
+    2. It creates kernel entries to support the new process. 
+    3. Finally it gives control of the cpu to user space in the new process
+All the above steps are done by fork() which is called as spawning of a new process.
+
 2.Describe how a process scheduler can be implemented, including any algorithms and data structures you would use.
 3.Why are system calls slow?
