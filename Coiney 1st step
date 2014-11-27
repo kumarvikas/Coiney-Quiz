@@ -1,0 +1,4 @@
+UNIX:
+1.Describe how to spawn a new process.
+2.Describe how a process scheduler can be implemented, including any algorithms and data structures you would use.
+3.Why are system calls slow?
