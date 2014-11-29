@@ -7,3 +7,41 @@ All the above steps are done by fork() which is called as spawning of a new proc
 
 2.Describe how a process scheduler can be implemented, including any algorithms and data structures you would use.
 3.Why are system calls slow?
+Ans: System calls are not usually slow but some system calls are slow. Slow system calls potentially requires waiting 
+for another task to comaplete, so the kernel must prepare to pause the calling process and run another task.
+-----------------------------------------------------
+Algorithms:
+// Reverse an integer n > 0; e.g., 213 −> 312.
+int reverse(int n);
+Ans:
+	private static void reverseInt(int n) {
+		int reverse = 0;
+		while (n != 0) {
+			reverse = reverse * 10;
+	        reverse = reverse + n%10;
+	        n = n/10;
+		}
+		System.out.println(reverse);
+	}
+
+// Evaluate whether an integer n > 0 is symmetrical; e.g., 101 -> true
+int symmetrical(int n);
+Ans:
+	private static void symmetrical(int n) {
+		int reverse = 0;
+		int temp = n;
+		while (n != 0) {
+			reverse = reverse * 10;
+	        reverse = reverse + n%10;
+	        n = n/10;
+		}
+		if (reverse == temp) {
+			System.out.println("Integer is symmetrical");
+		} else {
+			System.out.println("Integer is not symmetrical");
+		}
+	}
+--------------------------------------------------------
+
+Databases:
+
