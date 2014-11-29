@@ -44,4 +44,34 @@ Ans:
 --------------------------------------------------------
 
 Databases:
+1.Describe how indexing works, including any algorithms and data structures that can be used.
+Ans:
+Indexing is used to sort number of fields on multiple records. In a table, an index on a field created another 
+data structure which holds field value and pointer to the record it relates to. This index structure is then 
+sorted, allowing Binary Searches to be performed on it.
+Binary search is one of the best algorithm we can use here.
 
+2. What is normalization?
+Ans:
+To organize data into tables by removing redundacny and inconsistent dependency. Basically it the process to 
+simplfy and divide data into tables with relationship with each table.
+Types of normalization:
+1NF, 2NF, 3Nf and BCNF
+
+3. What are some situations in which denormalization is necessary?
+Ans:
+Below are some situations in which denormalization required:
+a) To present data in readily format
+b) To remove joins so that performace can be improved
+c) To avoid certain complex queries
+
+4. Explain the differences between INNER JOIN, FULL OUTER JOIN, and LEFT OUTER JOIN.
+Ans:
+INNER JOIN - gives set of records which are common in table T1 and table T2
+FULL OUTER JOIN - gives set of all records from tabel T1 and T2, with matching records from both side if available.
+If no match found corresponding side with have null
+LEFT OUTER JOIN - gives set of all records from Left table with matching records from right table if available. If no
+match found then right side will contain null.
+-------------------------------------------------------------
+
+HTTP:
