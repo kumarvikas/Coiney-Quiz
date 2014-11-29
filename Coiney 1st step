@@ -75,3 +75,29 @@ match found then right side will contain null.
 -------------------------------------------------------------
 
 HTTP:
+1. What do status codes 2xx, 3xx, 4xx, and 5xx indicate?
+Ans:
+2xx - This class of status codes indicates the action requested by the client was received, understood, 
+accepted and processed successfully.
+3xx - This class of status code indicates the client must take additional action to complete the request.
+Many of these status codes are used in URL redirection.
+4xx - Client side errors. The 4xx class of status code is intended for cases in which the client seems 
+to have errored.
+5xx - Server errors. The server failed to fulfill an apparently valid request.
+
+2. What is the difference between GET, POST, PUT, PATCH, and DELETE?
+Ans:
+GET - Retrieve information. 
+POST - Request that the resource at the URI do something with the provided entity. To update and existing 
+entity or to create a new entity.
+PUT - Store an entity at a URI. PUT can create a new entity or update an existing one. A PUT request is idempotent.PUT
+replaces an existing entity.
+PATCH - Update only the specified fields of an entity at a URI. A PATCH request is idempotent.
+DELETE - Request that remove a resource.
+
+3. What is the difference between a session and a cookie?
+Ans:
+Cookie - data stored by browser and sent to sever with every request.
+Session - collection of data stored on the server and associated with a given user (usually via a cookie containing 
+an id code)
+-----------------------------------------------------
